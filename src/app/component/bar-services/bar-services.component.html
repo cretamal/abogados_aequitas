@@ -1,0 +1,48 @@
+<div class="bar-services">
+  <div class="wrapper-site">
+    <ul>
+      <li *ngFor="let item of typeServices; let i=index" [ngClass]="'item'+i">
+        <span></span>
+        <a href="javascript:void(0);">
+          <p>
+            DEFENSA {{item.Name | uppercase}}
+          </p>
+        </a>
+      </li>
+      <li class="item3">
+        <span></span>
+        <a href="javascript:void(0);">
+          <p>
+            Ver Todos
+          </p>
+        </a>
+      </li>
+
+
+      <!-- <li class="item2">
+        <span></span>
+        <a href="javascript:void(0);">
+          <p>
+            DEFENSA CIVIL
+          </p>
+        </a>
+      </li>
+      <li class="item3">
+        <span></span>
+        <a href="javascript:void(0);">
+          <p>
+            DEFENSA LABORAL
+          </p>
+        </a>
+      </li>
+      <li class="item4">
+        <span></span>
+        <a href="javascript:void(0);">
+          <p>
+            Ver Todos
+          </p>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+</div>

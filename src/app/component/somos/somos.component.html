@@ -1,0 +1,17 @@
+<div class="box-somos">
+  <div class="wrapper-site">
+    <div class="left">
+      <h2 *ngIf="somos != undefined">{{somos[0].Title}} <span>{{somos[0].TitleOutstanding}}</span></h2>
+      <p *ngIf="somos != undefined">
+        {{somos[0].Content}}
+      </p>
+    </div>
+    <div class="right">
+      <ul *ngIf="somos != undefined">
+        <li *ngFor="let image of this.somos[0].Image; let i=index">
+          <img src="http://206.189.223.228{{somos[0]?.Image[i].url}}" alt="banner-aequitas" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

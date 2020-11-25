@@ -1,0 +1,3 @@
+<div class="bloque">
+  <h2 *ngIf="mediacion != undefined">{{mediacion[0].Title}} <span>{{mediacion[0].TitleOutstanding}}</span></h2>
+  <p *ngIf="mediacion != undefined" [innerHTML]="mediacion[0]?.Content"></p>

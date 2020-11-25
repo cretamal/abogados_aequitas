@@ -1,0 +1,115 @@
+@import '../../../assets/scss/mq';
+.box-servicios{
+  padding:100px 0 100px 0;
+  .wrapper-site{
+    @include respond-to($iphone_xs) {
+      max-width:90%;
+    }
+    .bloque{
+      h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 72px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 0.9;
+        letter-spacing: 5.4px;
+        text-align: center;
+        color: #000000;
+        span{
+          color: #d40202;
+        }
+      }
+      p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 17.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.31px;
+        text-align: center;
+        color: #010101;
+      }
+      ul{
+        margin:120px 0 0 0;
+        padding:0;
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        @include respond-to($iphone_xs) {
+          grid-template-columns: 100%;
+        }
+        li{
+          display:block;
+          @include respond-to($iphone_xs) {
+            margin:10px 0 10px 0;
+          }
+        }
+      }
+      .card{
+        background:#484848;
+        padding:32px;
+        .head{
+          display:flex;
+          align-items: center;
+          column-gap: 20px;
+          h3{
+            font-family: 'Roboto', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 3.6px;
+            text-align: left;
+            color: #ffffff;
+          }
+        }
+        .body{
+          h3,p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 100;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.88;
+            letter-spacing: 1.2px;
+            text-align: left;
+            color: #ffffff;
+            margin:0;
+          }
+        }
+        .foo{
+          .boton{
+            width: 250px;
+            height: 45px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            cursor:pointer;
+            margin:50px 0 0 0;
+          }
+        }
+      }
+      li:nth-child(1){
+        .card{
+          border-top:7px solid #36ffbf;
+        }
+      }
+      li:nth-child(2){
+        .card{
+          background:#3d3d3d;
+          border-top:7px solid #4506f9;
+        }
+      }
+      li:nth-child(3){
+        .card{
+          background: #373737;
+          border-top:7px solid #ff9600;
+        }
+      }
+    }
+  }
+}

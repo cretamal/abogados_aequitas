@@ -1,0 +1,54 @@
+<div class="form">
+  <div class="wrapper-site">
+    <div class="head">
+      <div class="bloque">
+        <h2>Contáctanos</h2>
+        <p>Aequitas Abogados</p>
+      </div>
+    </div>
+    <div class="box-form">
+      <form [formGroup]="dataForm" #formDirective="ngForm">
+
+        <ul>
+          <li>
+            <p>Ingresa tu Nombre</p>
+            <input type="text" pInputText formControlName="name"/>
+          </li>
+          <li>
+            <p>Ingresa tu Rut</p>
+            <input type="text" pInputText formControlName="rut"/>
+          </li>
+          <li>
+            <p>Ingresa tu Email</p>
+            <input type="text" pInputText formControlName="email"/>
+          </li>
+          <li>
+            <p>Ingresa tu Teléfono</p>
+            <input type="text" pInputText formControlName="phone"/>
+          </li>
+          <li>
+            <p>Materia Legal</p>
+            <p-dropdown optionLabel="name" placeholder="Select a options" [options]="legalMatters" formControlName="legalMatter"></p-dropdown>
+          </li>
+          <li>
+            <p>Toma de Hora</p>
+            <p-calendar formControlName="scheduletime"></p-calendar>
+          </li>
+          <li>
+            <p>Cuéntanos</p>
+            <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize" formControlName="comment"></textarea>
+          </li>
+        </ul>
+
+
+      </form>
+    </div>
+    <div class="boton" (click)="contacto()">
+      <p>
+        Agendar
+      </p>
+    </div>
+
+  </div>
+</div>
+

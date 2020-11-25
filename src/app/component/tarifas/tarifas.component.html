@@ -1,0 +1,20 @@
+<div class="box-tarifas">
+  <div class="wrapper-site">
+    <div class="bloque">
+      <h2 *ngIf="tarifas != undefined">{{tarifas[0].Title}} <span>{{tarifas[0].TitleOutstanding}}</span></h2>
+      <p *ngIf="tarifas != undefined">
+        {{tarifas[0].Content}}
+      </p>
+    </div>
+  </div>
+</div>
+<div class="box-tarifas-pasos">
+  <div class="wrapper-site">
+    <ul *ngIf="pasosAtencion != undefined">
+      <li *ngFor="let image of this.pasosAtencion[0].Image; let i=index">
+        <img src="http://206.189.223.228{{pasosAtencion[0]?.Image[i].url}}" alt="pasos-aequitas" />
+      </li>
+    </ul>
+  </div>
+</div>
+

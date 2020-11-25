@@ -1,0 +1,45 @@
+@import '../../../assets/scss/mq';
+.bloque{
+  @include respond-to($iphone_xs) {
+    max-width:90%;
+    margin:0 auto 0 auto;
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 0.9;
+    letter-spacing: 5.4px;
+    text-align: left;
+    color: #000000;
+    span{
+      color: #d40202;
+    }
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.31px;
+    text-align: justify;
+    color: #000000;
+
+  }
+  h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.65px;
+    text-align: left;
+    color: #010101;
+    margin: 40px 0 40px 0;
+  }
+}

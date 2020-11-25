@@ -1,0 +1,94 @@
+@import '../../../assets/scss/mq';
+.header{
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index:10;
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.75);
+  padding:5px 0 5px 0;
+  @include respond-to($iphone_xs) {
+    display:none;
+  }
+  .wrapper-header{
+    max-width:80%;
+    margin:0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 93px auto 100px;
+  }
+  .logo{
+    margin:0;
+  }
+
+  .nav{
+    ul{
+      margin:0;
+      padding:0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 24px;
+      li{
+        display:block;
+        a{
+          text-decoration: none;
+          p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 100;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+      li.active{
+        a{
+          p{
+            color:#ff0000;
+          }
+        }
+
+      }
+    }
+  }
+
+  .corporacion{
+    ul{
+      margin:0;
+      padding:0;
+      display: grid;
+      grid-template-columns: 17px auto;
+      gap:5px;
+      align-items: center;
+      justify-content: center;
+      .icono{
+        svg,img{
+          width:100%;
+          display:block;
+        }
+      }
+      li{
+        list-style: none;
+        a{
+          text-decoration: none;
+          p{
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 100;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: 1.2px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

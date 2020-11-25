@@ -1,0 +1,16 @@
+<div class="big-banner">
+  <div class="slider">
+    <img *ngIf="bigBanner != undefined" src="http://206.189.223.228{{bigBanner[0].Image['url']}}" alt="banner-aequitas"/>
+    <div class="content">
+      <div class="wrapper-site">
+        <h2 *ngIf="bigBanner != undefined">
+          <div class="rect">
+            <span class="r1"></span>
+            <span class="r2"></span>
+          </div>
+          {{ bigBanner[0].Title }}
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+
+.form{
+  .bloque{
+    h2{
+      font-family: 'Roboto', sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 0.9;
+      letter-spacing: 5.4px;
+      text-align: center;
+      margin:0;
+      color: #000000;
+      span{
+        color: #d40202;
+      }
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-size: 17.5px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.31px;
+      text-align: center;
+      color: #010101;
+    }
+  }
+  .boton{
+    background:#d20303;
+    color:#ffffff;
+    margin:0 auto 0 auto;
+  }
+  .box-form{
+    display: block;
+    margin:0 0 50px 0;
+    ul{
+      max-width:640px;
+      margin:0 auto;
+      display: grid;
+      grid-template-columns:45% 45%;
+      column-gap: 5%;
+      // align-items: center;
+      justify-content: center;
+
+      li{
+        width:100%;
+        display: block;
+        list-style: none;
+        input{
+          width:100%;
+        }
+        p-calendar{
+          width:100% !important;
+          // border:1px solid red;
+          .p-calendar{
+            width:100% !important;
+          }
+        }
+        p-dropdown{
+          .p-dropdown{
+            width:100%;
+          }
+          li{
+            width:100% !important;
+            display:block !important;
+          }
+          .p-dropdown-items{
+            display:block !important;
+          }
+        }
+
+
+        p{
+          font-size:18px;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
+  }
+}
+

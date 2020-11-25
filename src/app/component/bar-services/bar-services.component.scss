@@ -1,0 +1,76 @@
+@import '../../../assets/scss/mq';
+.bar-services{
+  width:100%;
+  height:80px;
+  background:#333333;
+  @include respond-to($iphone_xs) {
+    overflow-x: scroll;
+  }
+  ul{
+    height:80px;
+    margin:0;
+    padding:0;
+    display:grid;
+    align-items: center;
+    grid-template-columns: 316px 316px 316px 251px;
+    li{
+      height:100%;
+      text-decoration: none;
+      list-style: circle;
+      position:relative;
+      align-items: center;
+      display: flex;
+      a{
+        text-decoration: none;
+        padding:0 0 0 20px;
+        position: relative;
+        z-index: 1;
+      }
+      p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.19;
+        letter-spacing: 1.2px;
+        text-align: center;
+        color: #ffffff;
+      }
+      span{
+        width:100%;
+        height:100%;
+        position:absolute;
+        z-index: 0;
+        top:0;
+        left:0;
+        display: block;
+      }
+    }
+    .item0{
+      span{
+        background:rgba(255,255,255, 0);
+      }
+    }
+    .item1{
+      span{
+        background:rgba(255,255,255, 0.05);
+      }
+    }
+    .item2{
+      span{
+        background:rgba(255,255,255, 0.10);
+      }
+    }
+    .item3{
+      span{
+        background:rgba(0,0,0, 1);
+      }
+      a{
+        p{
+          color:#ff0000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../../assets/scss/mq';
+.box-somos{
+  padding:100px 0 100px 0;
+  .wrapper-site{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    @include respond-to($iphone_xs) {
+      grid-template-columns: 100%;
+      max-width:90%;
+    }
+  }
+  .left{
+    h2{
+      font-family: 'Roboto', sans-serif;
+      font-size: 72px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: 0.9;
+      letter-spacing: 5.4px;
+      text-align: left;
+      color: #000000;
+      span{
+        color: #d40202;
+      }
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+      font-size: 17.5px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.31px;
+      text-align: justify;
+      color: #000000;
+
+    }
+  }
+  .right{
+    ul{
+      margin:0;
+      padding:0;
+      display:flex;
+      align-items: center;
+      li{
+        list-style: none;
+        position: relative;
+      }
+      li:nth-child(1){
+        z-index:0;
+        left:100px;
+        @include respond-to($iphone_xs) {
+          display:none;
+        }
+      }
+      li:nth-child(2){
+        z-index:3;
+        top:5vh;
+        @include respond-to($iphone_xs) {
+          top:0;
+        }
+      }
+      li:nth-child(3){
+        z-index:2;
+        top:10vh;
+        right:100px;
+        @include respond-to($iphone_xs) {
+          display:none;
+        }
+      }
+    }
+  }
+}
