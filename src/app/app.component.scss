@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../assets/scss/mq';
+body{
+  margin:0 !important;
+  padding:0 !important;
+
+  h2{
+    @include respond-to($iphone_xs) {
+      font-size:50px !important;
+    }
+  }
+
+  .wrapper-site{
+    max-width:1200px;
+    display:block;
+    margin:0 auto 0 auto;
+  }
+
+  .boton{
+    width: 250px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    margin:50px 0 0 0;
+  }
+}
