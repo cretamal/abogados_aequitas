@@ -5,37 +5,11 @@
         <span></span>
         <a (click)="linkToPage(item)">
           <p>
-            DEFENSA {{item.Name | uppercase}}
+            <ng-container *ngIf="item.Type != 'otros' ">DEFENSA</ng-container> {{item.Name | uppercase}}
           </p>
         </a>
       </li>
-      <li class="item3">
-        <span></span>
-        <a href="javascript:void(0);">
-          <p>
-            Ver Todos
-          </p>
-        </a>
-      </li>
-
-
-      <!-- <li class="item2">
-        <span></span>
-        <a href="javascript:void(0);">
-          <p>
-            DEFENSA CIVIL
-          </p>
-        </a>
-      </li>
-      <li class="item3">
-        <span></span>
-        <a href="javascript:void(0);">
-          <p>
-            DEFENSA LABORAL
-          </p>
-        </a>
-      </li>
-      <li class="item4">
+      <!-- <li class="item3">
         <span></span>
         <a href="javascript:void(0);">
           <p>

@@ -1,0 +1,36 @@
+@import '../../../assets/scss/mq';
+.box-leyenda-servicios{
+  padding:60px 0 0 0;
+  .wrapper-site{
+    @include respond-to($iphone_xs) {
+      max-width:90%;
+    }
+    .bloque{
+      h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 72px;
+        font-weight: 900;
+        font-stretch: normal;
+        font-style: italic;
+        line-height: 0.9;
+        letter-spacing: 5.4px;
+        text-align: center;
+        color: #000000;
+        span{
+          color: #d40202;
+        }
+      }
+      p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 17.5px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1.31px;
+        text-align: center;
+        color: #010101;
+      }
+    }
+  }
+}

@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CommonService } from 'src/app/services/common.service';
 
 @Component({
   selector: 'app-interior',
   templateUrl: './interior.component.html',
-  styleUrls: ['./interior.component.scss']
+  styleUrls: ['./interior.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class InteriorComponent implements OnInit {
   infoPage:any;

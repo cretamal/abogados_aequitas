@@ -1,6 +1,6 @@
 @import '../../../assets/scss/mq';
 .box-servicios{
-  padding:100px 0 100px 0;
+  padding:0 0 100px 0;
   .wrapper-site{
     @include respond-to($iphone_xs) {
       max-width:90%;

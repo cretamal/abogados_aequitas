@@ -26,6 +26,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InteriorComponent } from './component/interior/interior.component';
+import { LeyendaServiciosComponent } from './component/leyenda-servicios/leyenda-servicios.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { InteriorComponent } from './component/interior/interior.component';
     MediacionComponent,
     TarifasComponent,
     AgendarHoraComponent,
-    InteriorComponent
+    InteriorComponent,
+    LeyendaServiciosComponent
   ],
   imports: [
     BrowserModule,

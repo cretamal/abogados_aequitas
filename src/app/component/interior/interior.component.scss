@@ -1,10 +1,92 @@
 @import '../../../assets/scss/mq';
-.box-page{
-  .bloque{
-    @include respond-to($iphone_xs) {
-      max-width:90%;
-      margin:0 auto 0 auto;
+.bloque{
+  @include respond-to($iphone_xs) {
+    max-width:90%;
+    margin:0 auto 0 auto;
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 72px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 0.9;
+    letter-spacing: 5.4px;
+    text-align: left;
+    color: #000000;
+    span{
+      color: #d40202;
     }
+  }
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.31px;
+    text-align: left;
+    color: #000000;
+
+  }
+  h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.65px;
+    text-align: left;
+    color: #010101;
+    margin: 40px 0 40px 0;
+  }
+}
+.box-head{
+  padding:100px 0 50px 0;
+}
+.box-page{
+  padding:40px 0 80px 0;
+  .grid-2{
+    display:grid;
+    grid-template-columns:60% 35%;
+    align-items: center;
+    column-gap: 5%;
+  }
+  .box-agendar-hora{
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding:100px 0;
+    h2{
+      font-size:20px;
+      text-align: center;
+    }
+    .logo-brand{
+      width:120px;
+      height:120px;
+      border-radius:8px;
+      background: #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin:0 auto 0 auto;
+      img{
+        width: 100%;
+        max-width:80px;
+        display: block;
+        margin:0 auto 0 auto;
+      }
+    }
+    .boton{
+      background:#d20303;
+      color:#ffffff !important;
+      margin:0 auto 0 auto;
+      p{
+        color:#ffffff !important;
+      }
+    }
+  }
+  .box-interiordetails{
     h2{
       font-family: 'Roboto', sans-serif;
       font-size: 72px;
@@ -42,43 +124,6 @@
       text-align: left;
       color: #010101;
       margin: 40px 0 40px 0;
-    }
-  }
-  .grid-2{
-    display:grid;
-    grid-template-columns:60% 40%;
-    align-items: center;
-  }
-  .box-agendar-hora{
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    padding:100px 0;
-    h2{
-      font-size:20px;
-      text-align: center;
-    }
-    .logo-brand{
-      width:120px;
-      height:120px;
-      border-radius:8px;
-      background: #333333;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin:0 auto 0 auto;
-      img{
-        width: 100%;
-        max-width:80px;
-        display: block;
-        margin:0 auto 0 auto;
-      }
-    }
-    .boton{
-      background:#d20303;
-      color:#ffffff !important;
-      margin:0 auto 0 auto;
-      p{
-        color:#ffffff !important;
-      }
     }
   }
 
