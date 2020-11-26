@@ -1,0 +1,51 @@
+<div class="site">
+
+  <app-big-banner></app-big-banner>
+  <!-- <app-bar-services></app-bar-services> -->
+
+  <div class="box-page">
+    <div class="wrapper-site">
+      <div class="bloque">
+        <h2>MATERIAS</h2>
+        <p>
+          En AEQUITAS, ofrecemos un servicio jurídico integral y profesional, en diversos ámbitos del derechos, tales como; Derecho de Familia, Derecho Civil y Derecho Laboral,  además de contar con servicios profesionales de Psicólogos con experiencias en materia de VIF y Vulneraciones de Derechos y Trabajadores Sociales con experiencia en trabajo de informes socioeconómicos y otros. Trabajamos con responsabilidad, eficacia y buena atención, dando respuesta oportuna a cada una de sus requerimientos.
+        </p>
+      </div>
+    </div>
+    <div class="wrapper-site grid-2">
+      <div class="left">
+        <div class="bloque">
+          <h2>Defensa <span>Familiar</span> :</h2>
+          <p *ngIf="infoPage != undefined" [innerHTML]="infoPage[0]?.Content"></p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="box-agendar-hora">
+          <div class="bloque">
+            <div class="logo-brand">
+              <img src="./assets/img/aequitas-logo.svg" />
+            </div>
+            <h2>CONTACTANOS</h2>
+            <div class="boton">
+              <p>
+                Agendar Hora
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <app-servicios></app-servicios>
+  <app-agendar-hora></app-agendar-hora>
+</div>
+
+

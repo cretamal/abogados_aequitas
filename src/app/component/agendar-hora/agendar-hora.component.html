@@ -12,31 +12,31 @@
         <ul>
           <li>
             <p>Ingresa tu Nombre</p>
-            <input type="text" pInputText formControlName="name"/>
+            <input type="text" pInputText formControlName="name"  placeholder="Ej: Camila Muñoz"/>
           </li>
           <li>
             <p>Ingresa tu Rut</p>
-            <input type="text" pInputText formControlName="rut"/>
+            <input type="text" pInputText formControlName="rut" placeholder="Ej: 16.874.999-0"/>
           </li>
           <li>
             <p>Ingresa tu Email</p>
-            <input type="text" pInputText formControlName="email"/>
+            <input type="text" pInputText placeholder="Ej: ayuda@aequitas.cl" formControlName="email"/>
           </li>
           <li>
             <p>Ingresa tu Teléfono</p>
-            <input type="text" pInputText formControlName="phone"/>
+            <input type="text" pInputText formControlName="phone" placeholder="Ej: 9 65 81 398"/>
           </li>
           <li>
             <p>Materia Legal</p>
-            <p-dropdown optionLabel="name" placeholder="Select a options" [options]="legalMatters" formControlName="legalMatter"></p-dropdown>
+            <p-dropdown optionLabel="name" placeholder="Selecciona una opción" [options]="legalMatters" formControlName="legalMatter"></p-dropdown>
           </li>
           <li>
             <p>Toma de Hora</p>
-            <p-calendar formControlName="scheduletime"></p-calendar>
+            <p-calendar formControlName="scheduletime" placeholder="Selecciona una fecha"></p-calendar>
           </li>
           <li>
             <p>Cuéntanos</p>
-            <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize" formControlName="comment"></textarea>
+            <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize" formControlName="comment" placeholder="Describe brevemente tu caso ..."></textarea>
           </li>
         </ul>
 
@@ -45,7 +45,7 @@
     </div>
     <div class="boton" (click)="contacto()">
       <p>
-        Agendar
+        Agendar Hora
       </p>
     </div>
 

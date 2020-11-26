@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/services/common.service';
 
 @Component({
@@ -11,7 +12,8 @@ export class BarServicesComponent implements OnInit {
   typeServices:any;
 
   constructor(
-    private commonService: CommonService
+    private commonService: CommonService,
+    private router: Router,
   ) { }
 
   ngOnInit() {
@@ -23,6 +25,11 @@ export class BarServicesComponent implements OnInit {
       this.typeServices =  resp;
       console.log('this.typeServices', this.typeServices);
     });
+  }
+
+  linkToPage(item){
+    console.log('item click', item.Type);
+    this.router.navigate( ['/servicio/'+item.Type]);
   }
 
 }

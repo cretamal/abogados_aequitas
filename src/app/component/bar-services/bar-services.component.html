@@ -3,7 +3,7 @@
     <ul>
       <li *ngFor="let item of typeServices; let i=index" [ngClass]="'item'+i">
         <span></span>
-        <a href="javascript:void(0);">
+        <a (click)="linkToPage(item)">
           <p>
             DEFENSA {{item.Name | uppercase}}
           </p>

@@ -28,9 +28,9 @@ export class AgendarHoraComponent implements OnInit {
 
 
       this.legalMatters = [
-        {id:0, name: 'DEFENSA FAMILIAR'},
-        {id:1, name: 'DEFENSA CIVIL'},
-        {id:2, name: 'DEFENSA LABORAL'}
+        {id:0, name: 'Defensa Familiar'},
+        {id:1, name: 'Defensa Civil'},
+        {id:2, name: 'Defensa Laboral'}
       ]
     }
 
