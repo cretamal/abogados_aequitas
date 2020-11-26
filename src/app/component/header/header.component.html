@@ -1,10 +1,10 @@
 <div class="header">
   <div class="wrapper-header">
-    <div class="logo">
+    <div class="logo" [routerLink]="['/']">
       <img src="./assets/img/aequitas-logo.svg" />
     </div>
     <div class="nav">
-      <ul>
+      <ul *ngIf="viewNav">
         <li class="active">
           <a (click)="toPageSelect('home')">
             <p>

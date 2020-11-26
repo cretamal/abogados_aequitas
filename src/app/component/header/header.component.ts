@@ -7,12 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  anchorPage:boolean = false;
+  viewNav:boolean = false;
   constructor(
     private router: Router,
   ) {}
 
   ngOnInit() {
+
   }
 
   toPageSelect(page){

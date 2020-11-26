@@ -30,8 +30,12 @@
   }
   .boton{
     background:#d20303;
-    color:#ffffff;
+    color:#ffffff !important;
     margin:0 auto 0 auto;
+    p{
+      font-family: 'Roboto', sans-serif;
+      color:#ffffff !important;
+    }
   }
   .box-form{
     display: block;
