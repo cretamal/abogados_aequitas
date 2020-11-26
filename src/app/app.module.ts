@@ -27,6 +27,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InteriorComponent } from './component/interior/interior.component';
 import { LeyendaServiciosComponent } from './component/leyenda-servicios/leyenda-servicios.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,9 @@ import { LeyendaServiciosComponent } from './component/leyenda-servicios/leyenda
     DropdownModule,
     InputTextareaModule,
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
